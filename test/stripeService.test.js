@@ -14,12 +14,12 @@ describe('StripeService', () => {
         }
       }
     };
-    stripeService = new StripeService('sk_test_51MY8RUSGgWRsPNXHSf7jL67iRQ51jxlSoeyxQa6sE9dBZaLHmdIocTCb51KWAzrcK2kxAuI7tKblXR0oKvdjre1y00DF1wwEbQ', {apiVersion: '2023-10-16'});
+    stripeService = new StripeService('secret_key', {apiVersion: '2023-10-16'});
   });
 
   describe('constructor', () => {
     it('should create an instance of StripeService with valid API key', () => {
-      expect(stripeService.apiKey).to.equal('sk_test_51MY8RUSGgWRsPNXHSf7jL67iRQ51jxlSoeyxQa6sE9dBZaLHmdIocTCb51KWAzrcK2kxAuI7tKblXR0oKvdjre1y00DF1wwEbQ');
+      expect(stripeService.apiKey).to.equal('secret_key');
       expect(stripeService.config).to.deep.equal({apiVersion: '2023-10-16'});
     });
   });

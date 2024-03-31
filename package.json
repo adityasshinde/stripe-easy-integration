@@ -1,0 +1,34 @@
+{
+  "name": "stripe-easy-integration",
+  "version": "1.0.0",
+  "description": "Integrate to stripe with ease of use",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "npm test",
+    "install-deps": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityasshinde/stripe-easy-integration.git"
+  },
+  "keywords": [
+    "stripe",
+    "stripe-integration",
+    "payments"
+  ],
+  "author": "Aditya Shinde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adityasshinde/stripe-easy-integration/issues"
+  },
+  "homepage": "https://github.com/adityasshinde/stripe-easy-integration#readme",
+  "dependencies": {
+    "stripe": "^14.23.0"
+  },
+  "devDependencies": {
+    "chai": "^4.4.1",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^10.4.0"
+  }
+}

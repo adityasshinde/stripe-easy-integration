@@ -37,6 +37,14 @@ class StripeService {
     return this.config.paymentMethods;
   }
 
+  //apiversions update
+  setApiVersion(apiVersion) {
+    this.config.apiVersion = apiVersion;
+  }
+  getApiVersion() {
+    return this.config.apiVersion;
+  }
+
   // Method to enable webhook and set webhook URL
   enableWebhook(url) {
     this.config.webhookEnabled = true;

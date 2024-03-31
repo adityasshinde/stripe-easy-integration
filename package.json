@@ -2,7 +2,7 @@
   "name": "integrate-stripe",
   "version": "3.0.1",
   "description": "Integrate to stripe with ease of use",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "commonjs",
   "scripts": {
     "test": "npm test",

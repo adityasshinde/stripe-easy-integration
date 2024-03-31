@@ -52,7 +52,23 @@ class PaymentService {
       }
     }
   
-    // Add more methods as needed
+    async getPaymentMethod(paymentMethodId) {
+      try {
+        const paymentMethod = await this.stripeService.stripe.paymentMethods.retrieve(paymentMethodId);
+        return paymentMethod;
+      } catch (error) {
+        throw new Error(`Error retrieving payment method: ${error.message}`);
+      }
+    }
+
+    async createPaymentMethod(paymentMethod) {
+      try {
+        const newPaymentMethod = await this.stripeService.stripe.paymentMethods.create(paymentMethod);
+        return newPaymentMethod;
+      } catch (error) {
+        throw new Error(`Error creating payment method: ${error.message}`);
+      }
+    }
   }
   
   module.exports = PaymentService;
